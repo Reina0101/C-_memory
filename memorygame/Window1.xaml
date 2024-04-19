@@ -1,0 +1,135 @@
+﻿<Window x:Class="memorygame.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:memorygame"
+        mc:Ignorable="d"
+        Title="Memorygame" Height="500" Width="664" 
+        ResizeMode="NoResize" Topmost="False" 
+        WindowState="Normal" Icon="Resources/icon.png" 
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="background" Source="Resources/achtergrond-1.jpg" Stretch="UniformToFill" IsEnabled="True" Margin="0,0,0.333,0">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
+        <Button x:Name="BtnSpelen" Content="Nieuw Spel" HorizontalAlignment="Center" Height="34" Margin="52,405,466.667,0" VerticalAlignment="Top" Width="140" Click="Button_Click" FontFamily="Comic Sans MS" FontSize="15" IsEnabled="False" TabIndex="5">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="BtnSpelen2" Content="Doorgaan" HorizontalAlignment="Center" Height="34" Margin="428,357,89.6,0" VerticalAlignment="Top" Width="140" Click="Button_Click_2" FontFamily="Comic Sans MS" FontSize="15" TabIndex="5">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="button" Content="Afsluiten" HorizontalAlignment="Left" Height="34" Margin="538,428,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click_1" FontFamily="Impact" FontSize="20" TabIndex="6">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label" Content="Memorygame" HorizontalAlignment="Left" Height="79" Margin="193,10,0,0" VerticalAlignment="Top" Width="278" FontFamily="Ebrima" FontSize="40" Foreground="White" FontWeight="Bold" TextOptions.TextHintingMode="Fixed">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="Naambox" HorizontalAlignment="Left" Height="30" Margin="42,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Tekton Pro" FontSize="15" RenderTransformOrigin="0.5,0.5" TextChanged="Naambox_TextChanged" TabIndex="3" IsEnabled="False">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label x:Name="label2" Content="Kies uw gebruikersnamen!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="19,261,0,0" Width="236" FontFamily="Tekton" Foreground="White" FontSize="20" RenderTransformOrigin="0.5,0.5" Height="38">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+
+        </Label>
+        <Label Content="Of" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="311,342,0,0" Width="40" FontFamily="Tekton" Foreground="White" FontSize="20" RenderTransformOrigin="0.5,0.5" Height="34">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+
+        </Label>
+        <Button x:Name="Timer" Content="Timer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="353,116,0,0" Height="48" FontFamily="Ravie" FontSize="22" Click="Timer_Click" Background="#FFDDDDDD" TabIndex="2" IsEnabled="false">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Scores" Content="Scores" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="186,116,0,0" Height="48" FontFamily="Ravie" FontSize="22" Click="Scores_Click" TabIndex="1">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label x:Name="label1" Content="Kies een spelmodus!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,68,0,0" Width="205" FontFamily="Tekton Pro" Foreground="White" FontSize="20" RenderTransformOrigin="0.5,0.5">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.534"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <ComboBox x:Name="ComboBox" HorizontalAlignment="Center" Height="26" Margin="186,207,187.667,0" VerticalAlignment="Top" Width="285" FontSize="15" FontFamily="Segoe UI Black" SelectionChanged="comboBox_SelectionChanged" TabIndex="4">
+            <ComboBox.Effect>
+                <DropShadowEffect/>
+            </ComboBox.Effect>
+            <ComboBoxItem Content="Spiderman (Easy)" FontSize="15" FontFamily="Segoe UI Black"></ComboBoxItem>
+            <ComboBoxItem Content="Batman (Medium)" FontSize="15" FontFamily="Segoe UI Black"></ComboBoxItem>
+            <ComboBoxItem Content="Deadpool (Hard)" FontSize="15" FontFamily="Segoe UI Black"></ComboBoxItem>
+
+        </ComboBox>
+        <Label x:Name="label3" Content="Kies een Thema!" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="257,169,0,0" Width="150" FontFamily="Tekton Pro" Foreground="White" FontSize="20" RenderTransformOrigin="0.5,0.5">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+
+        </Label>
+        <TextBox x:Name="Naambox1" HorizontalAlignment="Left" Height="30" Margin="42,361,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Tekton Pro" FontSize="16" RenderTransformOrigin="0.5,0.5" TextChanged="Naambox_TextChanged" TabIndex="3" IsEnabled="False">
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label x:Name="label4" Content="Gemaakt door:" HorizontalAlignment="Left" Height="36" Margin="512,10,-82.333,0" VerticalAlignment="Top" Width="233" FontFamily="Cambria" FontSize="15" FontWeight="Bold" Foreground="White">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBlock  TextWrapping="WrapWithOverflow" x:Name="IHtextBlock" HorizontalAlignment="Left" Height="28" Margin="517,46,-5.333,0" Text="Ido Hiemstra" VerticalAlignment="Top" Width="151" Foreground="#FFFFFDFD" FontFamily="Cambria Math" FontSize="20">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock  TextWrapping="WrapWithOverflow" x:Name="JHtextBlock" HorizontalAlignment="Left" Height="28" Margin="517,71,-5.333,0" Text="Joey Hovinga" VerticalAlignment="Top" Width="151" Foreground="#FFFFFDFD" FontFamily="Cambria Math" FontSize="20">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock  TextWrapping="WrapWithOverflow" x:Name="RtextBlock" HorizontalAlignment="Left" Height="28" Margin="517,99,-5.333,0" Text="Reindert Visser" VerticalAlignment="Top" Width="151" Foreground="#FFFFFDFD" FontFamily="Cambria Math" FontSize="20">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock  TextWrapping="WrapWithOverflow" x:Name="MtextBlock" HorizontalAlignment="Left" Height="28" Margin="517,127,-5.333,0" Text="Micky Cheng" VerticalAlignment="Top" Width="151" Foreground="#FFFFFDFD" FontFamily="Cambria Math" FontSize="20">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock  TextWrapping="WrapWithOverflow" x:Name="JGtextBlock" HorizontalAlignment="Left" Height="28" Margin="517,155,-5.333,0" Text="Joop de Graaf" VerticalAlignment="Top" Width="151" Foreground="#FFFFFDFD" FontFamily="Cambria Math" FontSize="20">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <Button Opacity="0" x:Name="button1" Content="" HorizontalAlignment="Left" Height="28" Margin="512,71,0,0" VerticalAlignment="Top" Width="127" Click="button1_Click"/>
+        <Button x:Name="BtnSpelen2_Copy" Content="Highscores" HorizontalAlignment="Center" Height="34" Margin="428,297,89.6,0" VerticalAlignment="Top" Width="140" Click="Button_Click_3" FontFamily="Comic Sans MS" FontSize="15" TabIndex="5">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-Aquaman_logo",
+      "appliesTo": "memorygame/Resources/Images_Front/Aquaman_logo.png",
+      "type": "launch"
+    }
+  ]
+}

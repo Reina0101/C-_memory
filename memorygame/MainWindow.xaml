@@ -1,0 +1,34 @@
+﻿<Window x:Class="memorygame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:memorygame"
+        mc:Ignorable="d"
+        Title="Memorygame" Height="500" Width="700" 
+        ResizeMode="NoResize" Topmost="False" 
+        WindowState="Normal" Icon="Resources/icon.png"
+        WindowStartupLocation="CenterScreen">
+    <Grid x:Name="GameGrid"  Margin="10,0,20.667,8">
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="273*"/>
+            <RowDefinition Height="191*"/>
+        </Grid.RowDefinitions>
+        
+
+        <Grid x:Name="GameGrid" Margin="0,0,181,44" Grid.ColumnSpan="5" Grid.RowSpan="2"/>
+        <Grid Grid.ColumnSpan="2" Margin="0,0,120.333,0" Grid.RowSpan="2" />
+        <Grid Grid.ColumnSpan="2" Margin="0,0,120.333,0" Grid.RowSpan="2">
+        </Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="40*"/>
+            
+        </Grid.ColumnDefinitions>-->
+
+    </Grid>
+
+</Window>
